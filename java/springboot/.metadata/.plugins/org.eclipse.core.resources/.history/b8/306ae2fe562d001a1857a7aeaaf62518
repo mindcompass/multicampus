@@ -1,0 +1,24 @@
+package com.compass.board.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@Controller
+public class EmailContoller {
+	@GetMapping("/contact")
+	@Autowired
+	
+	public String contact() {
+		return "contact/contact";
+	}
+
+	@PostMapping("/contact")
+
+	public String contactPost() {
+		return "redirect:/";///자바로 보내져야 함
+
+	}
+}
