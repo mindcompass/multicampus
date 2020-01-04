@@ -1,0 +1,19 @@
+<script>
+    function check() {
+    var user_name=document.getElementsByName("user_name")[0].value;
+    var user_nick_name=document.getElementById("user_nick_name").value;
+
+    if (user_name ==''){
+        alert("NAME을 입력해주세요.");
+    }
+    if (user_nick_name==''){
+    
+        document.getElementById("user_nick_name").value =user_name;
+    }
+    }
+   </script>
+   <form>
+    NAME : <input type='text' name='user_name'><br>
+    NICKNAME : <input type='text' id='user_nick_name'><br>
+    <input type='button' value='OK' onclick='check()'>
+   </form>

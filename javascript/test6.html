@@ -1,0 +1,17 @@
+<script>
+    var article = {
+    num : 1,
+    title : 'A',
+    reply : [
+    { num : 3, title : 'A-3' },
+    { num : 2, title : 'A-2' },
+    { num : 1, title : 'A-1' }
+    ]
+    };
+    
+    console.log("게시물 번호 : " + article.num);
+    console.log("게시물 제목 : " + article.title);
+    console.log("댓글 목록");
+    for( var i in article.reply)
+    console.log(article.reply[i].num + " / " + article.reply[i].title);
+   </script>
